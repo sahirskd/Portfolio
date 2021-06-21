@@ -6,7 +6,7 @@
     "scope": "/",
     "display": "standalone",
     "start_url": "/",
-    "background_color": "#252525",
+    "background_color": "#fff",
     "theme_color": "#252525",
     "description": "Web Developer",
     "orientation": "portrait-primary",
