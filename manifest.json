@@ -1,0 +1,28 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Sahir khan",
+    "short_name": "Sahir khan",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "/",
+    "background_color": "#fff",
+    "theme_color": "#252525",
+    "description": "Web Developer",
+    "orientation": "portrait-primary",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {"src":"./asset/AppIcon.appiconset/196.png","sizes":"196x196","type":"image/png", "purpose": "any maskable"},
+        {"src":"./asset/AppIcon.appiconset/16.png","sizes":"16x16","type":"image/png"},
+        {"src":"./asset/AppIcon.appiconset/32.png","sizes":"32x32","type":"image/png"},
+        {"src":"./asset/AppIcon.appiconset/512.png","sizes":"512x512","type":"image/png"},
+        {"src":"./asset/AppIcon.appiconset/216.png","sizes":"216x216","type":"image/png"},
+        {"src":"./asset/AppIcon.appiconset/180.png","sizes":"180x180","type":"image/png"},
+        {"src":"./asset/AppIcon.appiconset/1024.png","sizes":"1024x1024","type":"image/png"},
+        {"src":"./asset/AppIcon.appiconset/256.png","sizes":"256x256","type":"image/png"},
+        {"src":"./asset/AppIcon.appiconset/128.png","sizes":"128x128","type":"image/png"}
+    ],
+    "url": "https://sahirskd.netlify.app/",
+    "screenshots": []
+}
