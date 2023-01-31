@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sahir | Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="title" content="Sahir khan | Web Developer" />
+    <meta
+      name="description"
+      content="I have experience in developing functional web application using JavaScript/jquery, XML, HTML, CSS. I wish to grow other businesses through my coding and organizational skills."
+    />
+    <link
+      rel="shortcut icon"
+      href="./asset/sahir_fdM_icon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./asset/AppIcon.appiconset/180.png"
+      type="image/x-icon"
+    />
+
+    <link rel="manifest" href="manifest.json"></link>
+    <meta name="theme-color" content="#252525">
+
+    
+
+    <!--     <link rel="stylesheet" href="./asset/style.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        color: #f2f2f2;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 1px;
+
+        /* overflow-x: hidden; */
+        /* color: white; */
+      }
+
+      @media only screen and (min-width: 1200px) {
+        .container {
+          width: 1200px;
+          margin: auto;
+        }
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .container {
+          display: flex !important;
+          flex-direction: column;
+          padding: 2rem 1rem !important;
+        }
+        .Position {
+          margin-bottom: 1rem;
+          display: block;
+          width: 100% !important;
+          padding: 0px !important;
+        }
+
+        .skillIcon {
+          margin: 0px !important;
+        }
+
+        .projects {
+          flex-direction: column !important;
+        }
+        .card2 {
+          margin: 2rem 0rem 0rem 0rem !important;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .btn {
+          width: 100%;
+        }
+      }
+
+      body {
+        background-color: #252525;
+      }
+      .container {
+        display: flex;
+        padding: 3rem 2.9rem;
+      }
+      .rounded-circle {
+        width: 10rem;
+        border-radius: 50%;
+        border: 3px solid white;
+      }
+
+      .Box {
+        border-radius: 10px;
+        padding: 32px;
+        background-color: #333333bd;
+        box-shadow: 0px 20px 40px rgba(30, 30, 30, 0.1);
+      }
+
+      .Position {
+        padding: 0rem 0.6rem;
+      }
+
+      .firstContianer {
+        width: 35%;
+      }
+
+      .secondContainer {
+        width: 65%;
+      }
+
+      .heading {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 4rem;
+        color: #f8835b;
+        margin-bottom: -10px;
+      }
+
+      .subHead {
+        font-size: 16px;
+        margin: 30px 0px 6px 0px;
+        text-decoration: underline;
+      }
+
+      .para {
+        font-size: 13px;
+        margin: 1rem 0rem;
+        line-height: 24px;
+      }
+
+      .subHead1 {
+        font-size: 20px;
+        color: #f8835b;
+        margin: 1.5rem 0rem;
+      }
+      .socialIcons {
+        margin: 13px 6px 6px 0px;
+        padding: 5px;
+        border-radius: 5px;
+        transition: background-color 0.15s ease-in-out;
+      }
+      .socialIcons:hover {
+        background-color: #f8835b;
+      }
+      .btn {
+        cursor: pointer;
+        padding: 12px 21px 12px 21px;
+        background-color: #f8835b;
+        border-radius: 5px;
+        border: 1px solid #f8835b;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 8px;
+        /* width: 100%; */
+        margin-top: 5px;
+        transition: background-color 0.15s ease-in-out;
+      }
+      .btn:hover {
+        background-color: transparent;
+      }
+
+      .iconSet {
+        text-align: center !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        margin: 16px 0px;
+        font-size: 16px;
+      }
+      .skillIcon {
+        margin-right: 20rem;
+      }
+      .skillIcon img {
+        margin-right: 5px;
+      }
+      .projects {
+        display: flex;
+      }
+
+      .card img {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .card2 {
+        margin: 0rem 0rem 2rem 2rem;
+      }
+
+      .card-heading {
+        display: flex;
+        justify-content: space-between;
+      }
+      .show-more {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* animation */
+
+      @-webkit-keyframes slide-in-top {
+        0% {
+          -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-top {
+        0% {
+          -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .slide-in-top {
+        -webkit-animation: slide-in-top 0.8s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      @-webkit-keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(1000px);
+          transform: translateY(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(1000px);
+          transform: translateY(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .slide-in-bottom {
+        -webkit-animation: slide-in-bottom 0.8s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          both;
+      }
+
+
+      /* background animation  */
+      @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #252525;
+    overflow: hidden;
+    z-index: -1;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 18s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 23%;
+    width: 216px;
+    height: 216px;
+    bottom: -216px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 54%;
+    width: 234px;
+    height: 234px;
+    bottom: -234px;
+    animation-delay: 2s;
+}
+.background li:nth-child(2) {
+    left: 75%;
+    width: 248px;
+    height: 248px;
+    bottom: -248px;
+    animation-delay: 6s;
+}
+.background li:nth-child(3) {
+    left: 52%;
+    width: 239px;
+    height: 239px;
+    bottom: -239px;
+    animation-delay: 14s;
+}
+.background li:nth-child(4) {
+    left: 22%;
+    width: 259px;
+    height: 259px;
+    bottom: -259px;
+    animation-delay: 19s;
+}
+.background li:nth-child(5) {
+    left: 73%;
+    width: 212px;
+    height: 212px;
+    bottom: -212px;
+    animation-delay: 2s;
+}
+.background li:nth-child(6) {
+    left: 34%;
+    width: 218px;
+    height: 218px;
+    bottom: -218px;
+    animation-delay: 15s;
+}
+.background li:nth-child(7) {
+    left: 56%;
+    width: 217px;
+    height: 217px;
+    bottom: -217px;
+    animation-delay: 5s;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide-in-top firstContianer Position">
+        <div class="firstBox Box">
+          <img alt="image" class="rounded-circle" src="./asset/sahir.jpg" />
+          <h1 class="heading">Sahir khan</h1>
+          <h3 style="margin-top: 0; text-decoration: none;" class="subHead">Web Developer</h3>
+          <p class="para">
+            A self-taught web developer, and has expertise in HTML, CSS,
+            JavaScript, Bootstrap, Gatsby and other frameworks. Nowadays
+            learning and implementing the technology of PWA, TWA to convert the
+            websites into Native cross platform mobile apps.
+          </p>
+          <h2 class="subHead1">Contact</h2>
+          <h3 class="subHead">Address:</h3>
+
+          <p>WZ 157, Sri Nagar Pitampura New Delhi 110034, India</p>
+          <h3 class="subHead">Phone Number:</h3>
+          <p>+91 9318374921</p>
+          <a rel="noopener" href="https://wa.me/+919318374921"
+            ><img
+              class="socialIcons"
+              src="./asset/icons/whatsapp.png"
+              alt="whatsapp"
+          /></a>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://www.linkedin.com/in/sahir-khan-8b38aa193/"
+            ><img
+              class="socialIcons"
+              src="./asset/icons/linkedin.png"
+              alt="linkedin"
+          /></a>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://twitter.com/sahirskd321"
+            ><img
+              class="socialIcons"
+              src="./asset/icons/twitter.png"
+              alt="twitter"
+          /></a>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://www.instagram.com/sahirskd/"
+            ><img
+              class="socialIcons"
+              src="./asset/icons/instagram.png"
+              alt="instagram"
+          /></a>
+          <a rel="noopener" target="_blank" href="https://github.com/sahirskd"
+            ><img
+              class="socialIcons"
+              src="./asset/icons/github (1).png"
+              alt="github"
+          /></a>
+
+          <div class="buttons">
+            <a href="tel:+919318374921"
+              ><button style="background-color: transparent" class="btn">
+                CONTACT ME
+              </button></a
+            >
+            <a target="_blank" href="https://drive.google.com/file/d/1ClXojWcJOBgCAI7QkY8wO4zxfqdpVFUA/view"
+              ><button class="btn">DOWNLOAD CV</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-in-bottom secondContainer Position">
+        <div class="secondBox Box">
+          <h2 class="subHead1">Experiences</h2>
+          <span class="subHead"><b>NIIT </b>| Web Developer</span>
+          <p class="para">
+            Worked in a team to create an <b> SPA e-learning</b>
+            platform for NIIT Ltd.
+          </p>
+          <p class="para">
+            Collaborated with design team, operation team on a daily basis to
+            build the platform, implemented the feedbacks given by other teams.
+          </p>
+          <p class="para">
+            We used the technologies like jquery, XML, shell, and HTML and CSS
+            to <b>dynamically</b> fetch the content and provide a good user
+            experience to the learner as well as the maitainer of the code.
+          </p>
+          <span class="subHead"
+            ><b>NGO Conferences Expo</b>| Web Developer</span
+          >
+          <p class="para">
+            Developed their website using <b>WordPress</b> and plugins created
+            designs for their website.
+          </p>
+          <p class="para">
+            Created facebook campaigns and <b>SEO</b> for the website using
+            Google search console, Yoast SEO and other analytics tools.
+          </p>
+          <p class="para">
+            Worked in the team and got an exposure to the corporate world and
+            learned a lot.
+          </p>
+          <span class="subHead"
+            ><b>Star Internationals </b>| Freelance Project</span
+          >
+          <p class="para">
+            Developed the website and <b>online chatbot</b> system using
+            WordPress and plugins, which helped them to 2X their revenue.
+          </p>
+          <p class="para">
+            Implemented call and message button below every product which
+            drastically increased their sales.
+          </p>
+          <p class="para">
+            Integrated SSL Certificate and made their site
+            <b>https</b> enabled, Meta tags and Yoast SEO plugin to improve
+            performance and SEO.
+          </p>
+          <span class="subHead"><b>Vyapar </b>| Academics Project</span>
+          <p class="para">
+            Developed the digital marketing company website using
+            <b>Bootstrap CSS</b> framework and jQuery.
+          </p>
+          <p class="para">
+            Made it <b>installable</b> on every device using PWA technology and
+            accessible even when the user is offline, with offline fallback.
+          </p>
+          <h2 class="subHead1">Education</h2>
+          <span class="subHead"><b>BCA </b>| (Persuing)</span>
+          <p class="para"></p>
+          <span class="subHead"><b>Intermediate (12th) </b></span>
+          <p class="para">
+            Passed 12th class with commerce stream and persuit computer
+            application certificate with 1st division in the school.
+          </p>
+          <span class="subHead"
+            ><b>High School (10th) </b>| With 2nd Division</span
+          >
+          <p class="para">
+            Passed 10th class with 2nd position in the school and percentage
+            89.4%. and 1st position in computer subject.
+          </p>
+          <h2 class="subHead1">Skills</h2>
+          <h3 class="iconSet">
+            HTML
+            <div class="skillIcon">
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+            </div>
+          </h3>
+          <h3 class="iconSet">
+            CSS
+            <div class="skillIcon">
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half.png" alt="" />
+            </div>
+          </h3>
+          <h3 class="iconSet">
+            JavaScript
+            <div class="skillIcon">
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 2.png" alt="" />
+            </div>
+          </h3>
+          <h3 class="iconSet">
+            WordPress
+            <div class="skillIcon">
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half.png" alt="" />
+            </div>
+          </h3>
+          <h3 class="iconSet">
+            Figma
+            <div class="skillIcon">
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half.png" alt="" />
+            </div>
+          </h3>
+          <h3 class="iconSet">
+            VS Code
+            <div class="skillIcon">
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+              <img src="./asset/bx_bxs-star-half 1.png" alt="" />
+            </div>
+          </h3>
+          <!-- div for the projects section -->
+          <div class="projects-heading">
+            <h2 class="subHead1">My Projects</h2>
+          </div>
+          <div class="projects">
+            <div class="card">
+              <img src="./asset/Screenshot (45).jpg" alt="" />
+              <div class="card-heading">
+                <h2>Landing Page</h2>
+                <a
+                  href="https://sahirskd.github.io/Landing-page/index.html"
+                  >Live Preview</a
+                >
+              </div>
+              <p class="para">
+                Converted this Landing Page into HTML, CSS, JavaScript from a PSD design, this landing page
+                is fully responsive on every device.
+              </p>
+            </div>
+            <div class="card card2">
+              <img src="./asset/Screenshot (13).png" alt="" />
+              <div class="card-heading">
+                <h2>Star Internationals</h2>
+                <a href="https://starinternationals.in/">Live Preview</a>
+              </div>
+              <p class="para">
+                Developed the website and online chatbot system using WordPress
+                and plugins, which helped them to 2X their revenue.
+              </p>
+            </div>
+          </div>
+
+          <div class="projects">
+            <div class="card">
+              <img src="./asset/Screenshot (14).png" alt="" />
+              <div class="card-heading">
+                <h2>NoteApp</h2>
+                <a href="https://sahirskd1.netlify.app/">Live Preview</a>
+              </div>
+              <p class="para">
+                Developed the website using Paper CSS framework and VanillaJS to
+                give real pencil notes experience to the users. Implemented PWA
+                technology and added a custom install button on the app which
+                helped to 3x the downloads of the apps.
+              </p>
+            </div>
+            <div class="card card2">
+              <img src="./asset/Screenshot (11).png" alt="" />
+              <div class="card-heading">
+                <h2>Vyapar</h2>
+                <a href="https://vyapar.netlify.app/">Live Preview</a>
+              </div>
+              <p class="para">
+                Created this digital marketing company website using Bootstrap
+                CSS framework and jQuery. Made it installable on every device
+                using PWA technology and accessible even when the user is
+                offline.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="show-more">
+            <a href="./asset/resume.html"
+              ><button
+                style="background-color: transparent; padding: 12px 41px"
+                class="btn"
+              >
+                VIEW MORE
+              </button></a
+            >
+          </div> -->
+          <!-- div for the projects section -->
+        </div>
+      </div>
+    </div>
+
+    <ul class="background">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
+
+    <script>
+      
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register("./sw.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+    })
+  }
+    </script>
+  </body>
+</html>
